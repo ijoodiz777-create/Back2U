@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <title>Back2U - Home</title>
 <link rel="stylesheet" href="style.css">
+<script src="home.js" defer></script>
+
 </head>
 <body>
 <nav>
@@ -30,7 +32,19 @@ usemap="#banner-map">
 href="about.html"
 alt="About Us">
 </map>
+<div class="home-actions">
 
+<button type="button" id="tipButton">
+Show Safety Tip
+</button>
+
+<button type="button" id="imageButton">
+Enlarge Image
+</button>
+
+<p id="tipMessage"></p>
+
+</div>
 
 
 <h2>How It Works</h2>
@@ -47,8 +61,17 @@ alt="About Us">
 Here are some examples of items
 that students may lose or find.
 </p>
+<input type="text"
+id="itemSearch"
+placeholder="Search for an item">
 
-<table>
+<button type="button" id="searchButton">
+Search
+</button>
+
+<p id="searchResult"></p>
+
+<table id="items-table">
 <tr>
 <th>Item</th>
 <th>Location</th>
@@ -74,7 +97,12 @@ that students may lose or find.
 </tr>
 </table>
 </section>
-
+<footer style="text-align: center;
+padding: 20px;
+color: #526477;
+font-size: 14px;">
+Back2U - Lost & Found for University Students
+</footer>
 
 </body>
 </html>

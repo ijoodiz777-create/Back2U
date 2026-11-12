@@ -78,4 +78,92 @@ border-radius: 12px;
 box-shadow: 0 3px 10px #cccccc;
 }
 
+/* Search Bar Design */
+#itemSearch {
+margin-left: 40px;
+padding: 12px;
+width: 280px;
+max-width: 55%;
+border: 1px solid #b8c7d6;
+border-radius: 8px;
+font-size: 15px;
+background-color: white;
+}
 
+#searchButton {
+padding: 12px 24px;
+margin-left: 8px;
+background-color: #264b70;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 15px;
+cursor: pointer;
+}
+
+#searchButton:hover {
+background-color: #32658b;
+}
+
+#searchResult {
+margin-left: 40px;
+margin-top: 15px;
+color: #264b70;
+font-weight: bold;
+}
+
+
+/* Home Page Buttons */
+.home-actions {
+margin: 25px 40px;
+text-align: center;
+}
+
+.home-actions button {
+background-color: #264b70;
+color: white;
+padding: 12px 22px;
+margin: 8px;
+border: none;
+border-radius: 8px;
+font-size: 15px;
+cursor: pointer;
+box-shadow: 0 2px 5px #cccccc;
+}
+
+.home-actions button:hover {
+background-color: #32658b;
+}
+
+#tipMessage {
+margin: 15px auto;
+color: #264b70;
+font-size: 16px;
+text-align: center;
+}
+
+/* About Us Interactive Button */
+.about-action {
+margin: 25px 40px;
+text-align: center;
+}
+
+.about-action button {
+background-color: #264b70;
+color: white;
+padding: 12px 22px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 15px;
+}
+
+.about-action button:hover {
+background-color: #32658b;
+}
+
+#learnMoreText {
+color: #264b70;
+margin-top: 15px;
+text-align: center;
+}

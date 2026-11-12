@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <title>Back2U - About Us</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.project-note {
+background-color: #eaf1f7;
+border-left: 4px solid #264b70;
+padding: 15px;
+margin: 25px 40px;
+border-radius: 8px;
+}
+</style>
 </head>
 <body>
 
@@ -12,6 +21,7 @@
 <a href="about.html">About Us</a>
 <a href="login.html">Login</a>
 <a href="signup.html">Sign Up</a>
+<a href="index.html#items">View Items</a>
 </nav>
 
 <h1>About Back2U</h1>
@@ -47,7 +57,44 @@ found belongings to their owners.
 <li>Saves time when searching for lost items.</li>
 <li>Encourages students to help each other.</li>
 </ul>
+<p class="project-note">
+Back2U aims to create a safer and more
+organized way for university students
+to reconnect with their lost belongings.
+</p>
+<div class="about-action">
+<button type="button" id="learnMoreBtn">
+How Does Back2U Help?
+</button>
 
+<p id="learnMoreText"></p>
+</div>
+
+<script>
+const learnMoreBtn =
+document.getElementById("learnMoreBtn");
+
+const learnMoreText =
+document.getElementById("learnMoreText");
+
+function showMoreInfo() {
+if (learnMoreText.textContent === "") {
+learnMoreText.textContent =
+"Back2U helps students save time " +
+"and makes returning lost items easier.";
+
+learnMoreBtn.textContent = "Hide Details";
+} else {
+learnMoreText.textContent = "";
+learnMoreBtn.textContent =
+"How Does Back2U Help?";
+}
+}
+
+learnMoreBtn.addEventListener(
+"click", showMoreInfo
+);
+</script>
 </body>
 </html>
 
